@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #ffffff;
+  user-select: none;
+  overflow-x: none;
+  scroll-behavior: smooth;
+}
+
+/* Cabeçalho */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 0% 5% 0% 5%;
+
+  a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    figure {
+      display: flex;
+      align-items: center;
+      img {
+        height: 60px;
+        display: flex;
+      }
+      figcaption {
+        margin-left: 10px;
+        font-weight: 500;
+
+        color: #81807e;
+        span {
+          font-size: 20px;
+          color: #053b91;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  nav {
+    ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+
+      li {
+        transition: 0.3s ease;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+/* Fiz o footer diferente para vc ver como podemos acessar de varias formas as tag, gosto de usar o do header, pq fica mais facil de ler */
+
+footer {
+  width: 100%;
+  background-color: #f5f7fa;
+  color: #333;
+  padding: 50px 80px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+}
+
+footer > div:first-child {
+  display: flex;
+  flex-direction: column;
+}
+.info-logo {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+footer > div:first-child h2 {
+  color: #81807e;
+  font-weight: 400;
+  span {
+    font-weight: bold;
+    color: #0b3983;
+  }
+}
+
+footer > div:first-child p {
+  margin-top: 12px;
+  color: #555;
+  font-size: 0.95rem;
+  max-width: 250px;
+}
+
+footer h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #1b236b;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+footer ul li a:hover {
+  color: #1b236b;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
+  border-radius: 6px;
+  padding: 4px 8px;
+}
+
+footer > p {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+footer img {
+  position: relative;
+  right: 10px;
+  bottom: 10px;
+  width: 70px;
+  height: 70px;
+}

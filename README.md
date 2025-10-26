@@ -4,7 +4,7 @@
 
 #### Este projeto simula um site de jogos de tabuleiro, mostrando os principais jogos mais famosos, e foi criado com o propósito de apresentar como trabalho na faculdade UNIFIP em Patos, no curso de ADS.
 
-<img width="800px" src="/ScreenHome.png">
+<img width="800px" src="./ScreenHome.png">
 
 ## Como usar
 

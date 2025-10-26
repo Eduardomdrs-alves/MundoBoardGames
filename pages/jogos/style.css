@@ -1,0 +1,112 @@
+#container-jogos {
+  width: 90%;
+  margin: 0 auto;
+  padding: 60px 0;
+  text-align: center;
+
+  .info-jogos {
+    p {
+      background-color: #e2e9f3;
+      color: #0042a7;
+      font-weight: 600;
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #0b3983;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #555;
+      font-weight: 400;
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto 50px auto;
+      line-height: 1.5;
+    }
+  }
+
+  .jogos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 30px;
+    justify-items: center;
+
+    .jogo-card {
+      background-color: #fff;
+      border-radius: 14px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      width: 100%;
+      max-width: 350px;
+      text-align: left;
+      position: relative;
+
+      &:hover {
+        transform: scale(1.1);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      }
+
+      img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .title-game {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px 0 20px;
+
+        h3 {
+          font-size: 1.3rem;
+          color: #0b3983;
+          font-weight: 700;
+        }
+        i {
+          color: #0042a7;
+          font-weight: 600;
+          font-size: 1rem;
+        }
+      }
+
+      .info {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 20px 10px 20px;
+        color: #777;
+        font-size: 12px;
+        
+        }
+      }
+
+      p {
+        padding: 0 20px 20px 20px;
+        color: #555;
+        line-height: 1.4;
+        font-size: 0.95rem;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .info-jogos {
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+

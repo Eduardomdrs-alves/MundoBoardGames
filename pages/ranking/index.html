@@ -1,143 +1,333 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mundo BoardGames</title>
-  <link rel="stylesheet" href="../../global/style.css">
-  <link rel="icon" href="imagens/logo.png" type="image/png">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mundo BoardGames</title>
+    <link rel="stylesheet" href="../../global/style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="../../imagens/LogoImg.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Assistant:wght@200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pangolin&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Zen+Kaku+Gothic+New&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
 
-<body>
-  <header>
-    <a href="index.html"><img src="imagens/logo.png" alt="Logo Mundo BoardGames" class="logo"></a>
-    <nav>
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="jogos.html">Jogos</a></li>
-        <li><a href="ranking.html">Ranking</a></li>
-        <li><a href="contato.html">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
+  <body>
+    <header>
+      <a href="./index.html">
+        <figure>
+          <img
+            src="../../imagens/LogoImg.png"
+            alt="Logo Mundo BoardGames"
+            class="logo"
+          />
+          <figcaption><span>MUNDO</span> <br />BOARDGAMES</figcaption>
+        </figure>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="../home/index.html">Início</a></li>
+          <li><a href="../jogos/index.html">Jogos</a></li>
+          <li><a href="../ranking/index.html">Ranking</a></li>
+          <li><a href="../contato/index.html">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <main class="container">
-    <section id="ranking">
-      <h2>Top 10 Boardgames</h2>
-      <p class="section-description">
-        Ranking baseado em avaliações da comunidade BoardGameGeek
+    <main>
+      <section id="container-ranking">
+        <div class="info-ranking">
+          <button class="ranking-btn">
+            <i class="fa-solid fa-ranking-star"></i> Rankings Oficiais
+          </button>
+          <h1>Top 10 Boardgames</h1>
+          <h2>
+            Ranking baseado em avaliações da comunidade BoardGameGeek,
+            atualizado mensalmente.
+          </h2>
+        </div>
+
+        <div class="ranking-table-container">
+          <h3>Melhores Jogos de Tabuleiro 2025</h3>
+          <p>Avaliações de milhares de jogadores ao redor do mundo</p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Posição</th>
+                <th>Jogo</th>
+                <th>Ano</th>
+                <th>Nota</th>
+                <th>Complexidade</th>
+                <th>Tendência</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td><i class="fa-solid fa-trophy gold"></i> 1º</td>
+                <td class="game-name">
+                  <a
+                    href="https://boardgamegeek.com/boardgame/224517/brass-birmingham"
+                    target="_blank"
+                    >Brass: Birmingham</a
+                  >
+                </td>
+                <td>2018</td>
+                <td><i class="fa-solid fa-star"></i> 8.6</td>
+                <td>⭐⭐⭐⭐</td>
+                <td>
+                  <span class="status stable"
+                    ><i class="fa-solid fa-minus"></i> Estável</span
+                  >
+                </td>
+              </tr>
+
+              <tr>
+                <td><i class="fa-solid fa-medal silver"></i> 2º</td>
+                <td class="game-name">
+                  <a
+                    href="https://boardgamegeek.com/boardgame/161936/pandemic-legacy-season-1"
+                    target="_blank"
+                    >Pandemic Legacy: Season 1</a
+                  >
+                </td>
+                <td>2015</td>
+                <td><i class="fa-solid fa-star"></i> 8.5</td>
+                <td>⭐⭐⭐</td>
+                <td>
+                  <span class="status up"
+                    ><i class="fa-solid fa-arrow-trend-up"></i> Subindo</span
+                  >
+                </td>
+              </tr>
+
+              <tr>
+                <td><i class="fa-solid fa-award bronze"></i> 3º</td>
+                <td class="game-name">
+                  <a
+                    href="https://boardgamegeek.com/boardgame/342942/ark-nova"
+                    target="_blank"
+                    >Ark Nova</a
+                  >
+                </td>
+                <td>2021</td>
+                <td><i class="fa-solid fa-star"></i> 8.5</td>
+                <td>⭐⭐⭐⭐</td>
+                <td>
+                  <span class="status up"
+                    ><i class="fa-solid fa-arrow-trend-up"></i> Subindo</span
+                  >
+                </td>
+              </tr>
+
+              <tr>
+                <td>4º</td>
+                <td class="game-name">
+                  <a
+                    href="https://boardgamegeek.com/boardgame/174430/gloomhaven"
+                    target="_blank"
+                    >Gloomhaven</a
+                  >
+                </td>
+                <td>2017</td>
+                <td><i class="fa-solid fa-star"></i> 8.6</td>
+                <td>⭐⭐⭐⭐</td>
+                <td>
+                  <span class="status down"
+                    ><i class="fa-solid fa-arrow-trend-down"></i> Caindo</span
+                  >
+                </td>
+              </tr>
+
+              <tr>
+                <td>5º</td>
+                <td class="game-name">
+                  <a
+                    href="https://boardgamegeek.com/boardgame/316554/dune-imperium"
+                    target="_blank"
+                    >Dune: Imperium</a
+                  >
+                </td>
+                <td>2020</td>
+                <td><i class="fa-solid fa-star"></i> 8.4</td>
+                <td>⭐⭐⭐</td>
+                <td>
+                  <span class="status stable"
+                    ><i class="fa-solid fa-minus"></i> Estável</span
+                  >
+                </td>
+              </tr>
+
+              <tr>
+                <td>6º</td>
+                <td class="game-name">
+                  <a
+                    href="https://boardgamegeek.com/boardgame/233078/twilight-imperium-fourth-edition"
+                    target="_blank"
+                    >Twilight Imperium: Fourth Edition</a
+                  >
+                </td>
+                <td>2017</td>
+                <td><i class="fa-solid fa-star"></i> 8.6</td>
+                <td>⭐⭐⭐⭐</td>
+                <td>
+                  <span class="status stable"
+                    ><i class="fa-solid fa-minus"></i> Estável</span
+                  >
+                </td>
+              </tr>
+
+              <tr>
+                <td>7º</td>
+                <td class="game-name">
+                  <a
+                    href="https://boardgamegeek.com/boardgame/167791/terraforming-mars"
+                    target="_blank"
+                    >Terraforming Mars</a
+                  >
+                </td>
+                <td>2016</td>
+                <td><i class="fa-solid fa-star"></i> 8.3</td>
+                <td>⭐⭐⭐</td>
+                <td>
+                  <span class="status down"
+                    ><i class="fa-solid fa-arrow-trend-down"></i> Caindo</span
+                  >
+                </td>
+              </tr>
+
+              <tr>
+                <td>8º</td>
+                <td class="game-name">
+                  <a
+                    href="https://boardgamegeek.com/boardgame/115746/war-of-the-ring-second-edition"
+                    target="_blank"
+                    >War of the Ring: Second Edition</a
+                  >
+                </td>
+                <td>2011</td>
+                <td><i class="fa-solid fa-star"></i> 8.6</td>
+                <td>⭐⭐⭐⭐</td>
+                <td>
+                  <span class="status stable"
+                    ><i class="fa-solid fa-minus"></i> Estável</span
+                  >
+                </td>
+              </tr>
+
+              <tr>
+                <td>9º</td>
+                <td class="game-name">
+                  <a
+                    href="https://boardgamegeek.com/boardgame/397598/dune-imperium-uprising"
+                    target="_blank"
+                    >Dune Imperium - Uprising</a
+                  >
+                </td>
+                <td>2023</td>
+                <td><i class="fa-solid fa-star"></i> 8.7</td>
+                <td>⭐⭐⭐⭐</td>
+                <td>
+                  <span class="status up"
+                    ><i class="fa-solid fa-arrow-trend-up"></i> Subindo</span
+                  >
+                </td>
+              </tr>
+
+              <tr>
+                <td>10º</td>
+                <td class="game-name">
+                  <a
+                    href="https://boardgamegeek.com/boardgame/187645/star-wars-rebellion"
+                    target="_blank"
+                    >Star Wars: Rebellion</a
+                  >
+                </td>
+                <td>2016</td>
+                <td><i class="fa-solid fa-star"></i> 8.4</td>
+                <td>⭐⭐⭐</td>
+                <td>
+                  <span class="status stable"
+                    ><i class="fa-solid fa-minus"></i> Estável</span
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="ranking-extra">
+          <div class="ranking-card">
+            <i class="fa-solid fa-trophy"></i>
+            <h4>Sobre o Ranking</h4>
+            <p>
+              Este ranking é baseado nas avaliações de milhares de jogadores ao
+              redor do mundo na plataforma BoardGameGeek. Os dados são
+              atualizados mensalmente para refletir as tendências mais recentes.
+            </p>
+          </div>
+
+          <div class="ranking-card">
+            <i class="fa-regular fa-star"></i>
+            <h4>Complexidade</h4>
+            <p>
+              A complexidade é medida em uma escala de 1 a 5 estrelas. Mais
+              estrelas indicam jogos com regras mais elaboradas e estratégias
+              mais profundas.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <div class="info-logo">
+          <img
+            src="../../imagens/LogoImg.png"
+            alt="Logo Mundo BoardGames"
+            class="logo"
+          />
+          <h2>
+            <span>MUNDO</span><br />
+            BOARDGAMES
+          </h2>
+        </div>
+        <p>Seu portal dedicao ao universo dos jogos de tabuleiro</p>
+      </div>
+
+      <div>
+        <h2>Links Rápidos</h2>
+        <ul>
+          <li><a href="./index.html">Início</a></li>
+          <li><a href="../jogos/index.html">Jogos</a></li>
+          <li><a href="../ranking/index.html">Ranking</a></li>
+          <li><a href="../contato/index.html">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Recursos</h2>
+        <ul>
+          <li><a href="./index.html">Guia para Iniciantes</a></li>
+          <li><a href="./index.html">Regras dos Jogos</a></li>
+          <li><a href="./index.html">Comunidade</a></li>
+          <li><a href="./index.html">Blog</a></li>
+        </ul>
+      </div>
+
+      <div></div>
+      <p>
+        © 2025 Mundo BoardGames. Todos os direitos reservados. Diversão
+        garantida em cada jogada!
       </p>
-
-      <div class="table-container">
-        <table class="ranking-table">
-          <thead>
-            <tr>
-              <th>Posição</th>
-              <th>Jogo</th>
-              <th>Ano</th>
-              <th>Nota</th>
-              <th>Complexidade</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="position">🥇 1º</td>
-              <td class="game-name"><a href="https://boardgamegeek.com/boardgame/224517/brass-birmingham"
-                  target="_blank">Brass: Birmingham</a></td>
-              <td>2018</td>
-              <td class="rating">8.6</td>
-              <td class="complexity">⭐⭐⭐⭐</td>
-            </tr>
-            <tr>
-              <td class="position">🥈 2º</td>
-              <td class="game-name"><a href="https://boardgamegeek.com/boardgame/161936/pandemic-legacy-season-1"
-                  target="_blank">Pandemic Legacy: Season 1</a></td>
-              <td>2015</td>
-              <td class="rating">8.5</td>
-              <td class="complexity">⭐⭐⭐</td>
-            </tr>
-            <tr>
-              <td class="position">🥉 3º</td>
-              <td class="game-name"><a href="https://boardgamegeek.com/boardgame/342942/ark-nova" target="_blank">Ark
-                  Nova</a></td>
-              <td>2021</td>
-              <td class="rating">8.5</td>
-              <td class="complexity">⭐⭐⭐⭐</td>
-            </tr>
-            <tr>
-              <td class="position">4º</td>
-              <td class="game-name"><a href="https://boardgamegeek.com/boardgame/174430/gloomhaven"
-                  target="_blank">Gloomhaven</a></td>
-              <td>2017</td>
-              <td class="rating">8.6</td>
-              <td class="complexity">⭐⭐⭐⭐</td>
-            </tr>
-            <tr>
-              <td class="position">5º</td>
-              <td class="game-name"><a href="https://boardgamegeek.com/boardgame/316554/dune-imperium"
-                  target="_blank">Dune: Imperium</a></td>
-              <td>2020</td>
-              <td class="rating">8.4</td>
-              <td class="complexity">⭐⭐⭐</td>
-            </tr>
-            <tr>
-              <td class="position">6º</td>
-              <td class="game-name"><a
-                  href="https://boardgamegeek.com/boardgame/233078/twilight-imperium-fourth-edition"
-                  target="_blank">Twilight Imperium: Fourth Edition</a></td>
-              <td>2017</td>
-              <td class="rating">8.6</td>
-              <td class="complexity">⭐⭐⭐⭐</td>
-            </tr>
-            <tr>
-              <td class="position">7º</td>
-              <td class="game-name"><a href="https://boardgamegeek.com/boardgame/167791/terraforming-mars"
-                  target="_blank">Terraforming Mars</a></td>
-              <td>2016</td>
-              <td class="rating">8.3</td>
-              <td class="complexity">⭐⭐⭐</td>
-            </tr>
-            <tr>
-              <td class="position">8º</td>
-              <td class="game-name"><a href="https://boardgamegeek.com/boardgame/115746/war-of-the-ring-second-edition"
-                  target="_blank">War of the Ring: Second Edition</a></td>
-              <td>2011</td>
-              <td class="rating">8.6</td>
-              <td class="complexity">⭐⭐⭐⭐</td>
-            </tr>
-            <tr>
-              <td class="position">9º</td>
-              <td class="game-name"><a href="https://boardgamegeek.com/boardgame/397598/dune-imperium-uprising"
-                  target="_blank">Dune Imperium - Uprising</a></td>
-              <td>2023</td>
-              <td class="rating">8.7</td>
-              <td class="complexity">⭐⭐⭐⭐</td>
-            </tr>
-            <tr>
-              <td class="position">10º</td>
-              <td class="game-name"><a href="https://boardgamegeek.com/boardgame/187645/star-wars-rebellion"
-                  target="_blank">Star Wars: Rebellion</a></td>
-              <td>2016</td>
-              <td class="rating">8.4</td>
-              <td class="complexity">⭐⭐⭐⭐</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="ranking-info">
-        <h3>Sobre o Ranking</h3>
-        <p>
-          Este ranking é baseado nas avaliações de milhares de jogadores ao redor do mundo
-          na plataforma BoardGameGeek. A complexidade é medida em uma escala de 1 a 5 estrelas,
-          onde mais estrelas indicam jogos com regras mais elaboradas e estratégias mais profundas.
-        </p>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Mundo BoardGames</p>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>

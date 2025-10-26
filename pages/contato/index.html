@@ -1,53 +1,110 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mundo BoardGames</title>
-  <link rel="stylesheet" href="../../global/style.css">
-  <link rel="icon" href="imagens/logo.png" type="image/png">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mundo BoardGames</title>
+    <link rel="stylesheet" href="../../global/style.css" />
+   <link rel="icon" href="../../imagens/LogoImg.png" type="image/png" />
+  </head>
 
-<body>
-  <header>
-    <a href="index.html"><img src="imagens/logo.png" alt="Logo Mundo BoardGames" class="logo"></a>
-    <nav>
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="jogos.html">Jogos</a></li>
-        <li><a href="ranking.html">Ranking</a></li>
-        <li><a href="contato.html">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
+  <body>
+    <header>
+      <a href="./index.html">
+        <figure>
+          <img
+            src="../../imagens/LogoImg.png"
+            alt="Logo Mundo BoardGames"
+            class="logo"
+          />
+          <figcaption><span>MUNDO</span> <br />BOARDGAMES</figcaption>
+        </figure>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="../home/index.html">Início</a></li>
+          <li><a href="../jogos/index.html">Jogos</a></li>
+          <li><a href="../ranking/index.html">Ranking</a></li>
+          <li><a href="../contato/index.html">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <section class="contato">
-    <h2>Entre em Contato</h2>
+    <section class="contato">
+      <h2>Entre em Contato</h2>
 
-    <br>
-    
-    <form>
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" required placeholder="Digite seu nome">
+      <br />
 
-      <br>
+      <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required placeholder="Digite seu nome" />
 
-      <label for="email">E-mail:</label>
-      <input type="email" id="email" required placeholder="exemplo@email.com">
+        <br />
 
-      <br>
+        <label for="email">E-mail:</label>
+        <input
+          type="email"
+          id="email"
+          required
+          placeholder="exemplo@email.com"
+        />
 
-      <label for="mensagem">Mensagem:</label>
-      <textarea id="mensagem" rows="5" required placeholder="Escreva sua mensagem aqui..."></textarea>
+        <br />
 
-      <br>
+        <label for="mensagem">Mensagem:</label>
+        <textarea
+          id="mensagem"
+          rows="5"
+          required
+          placeholder="Escreva sua mensagem aqui..."
+        ></textarea>
 
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
+        <br />
 
-  <footer>
-    <p>&copy; 2025 Mundo BoardGames</p>
-  </footer>
-</body>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <footer>
+      <div>
+        <div class="info-logo">
+          <img
+            src="../../imagens/LogoImg.png"
+            alt="Logo Mundo BoardGames"
+            class="logo"
+          />
+          <h2>
+            <span>MUNDO</span><br />
+            BOARDGAMES
+          </h2>
+        </div>
+        <p>Seu portal dedicao ao universo dos jogos de tabuleiro</p>
+      </div>
+
+      <div>
+        <h2>Links Rápidos</h2>
+        <ul>
+          <li><a href="./index.html">Início</a></li>
+          <li><a href="../jogos/index.html">Jogos</a></li>
+          <li><a href="../ranking/index.html">Ranking</a></li>
+          <li><a href="../contato/index.html">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Recursos</h2>
+        <ul>
+          <li><a href="./index.html">Guia para Iniciantes</a></li>
+          <li><a href="./index.html">Regras dos Jogos</a></li>
+          <li><a href="./index.html">Comunidade</a></li>
+          <li><a href="./index.html">Blog</a></li>
+        </ul>
+      </div>
+
+      <div></div>
+      <p>
+        © 2025 Mundo BoardGames. Todos os direitos reservados. Diversão
+        garantida em cada jogada!
+      </p>
+    </footer>
+  </body>
 </html>

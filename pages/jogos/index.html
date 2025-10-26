@@ -1,117 +1,196 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mundo BoardGames</title>
-  <link rel="stylesheet" href="../../global/style.css">
-  <link rel="icon" href="imagens/logo.png" type="image/png">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mundo BoardGames</title>
+    <link rel="stylesheet" href="../../global/style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="../../imagens/LogoImg.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Assistant:wght@200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pangolin&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Zen+Kaku+Gothic+New&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
 
-<body>
-  <header>
-    <a href="index.html"><img src="imagens/logo.png" alt="Logo Mundo BoardGames" class="logo"></a>
-    <nav>
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="jogos.html">Jogos</a></li>
-        <li><a href="ranking.html">Ranking</a></li>
-        <li><a href="contato.html">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
+  <body>
+    <header>
+      <a href="./index.html">
+        <figure>
+          <img
+            src="../../imagens/LogoImg.png"
+            alt="Logo Mundo BoardGames"
+            class="logo"
+          />
+          <figcaption><span>MUNDO</span> <br />BOARDGAMES</figcaption>
+        </figure>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="../home/index.html">Início</a></li>
+          <li><a href="../jogos/index.html">Jogos</a></li>
+          <li><a href="../ranking/index.html">Ranking</a></li>
+          <li><a href="../contato/index.html">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <main class="container">
-        <section id="jogos">
-            <h2>Jogos Populares</h2>
-            <p class="section-description">
-                Conheça alguns dos boardgames mais jogados e amados pela comunidade mundial
-            </p>
-            
-            <div class="games-grid">
-                <div class="game-card">
-                    <img src="imagens/catan2.jpg" alt="Catan" style="width: 200px">
-                    <div class="game-info">
-                        <h3>Catan</h3>
-                        <p class="game-players">👥 3-4 jogadores</p>
-                        <p class="game-time">⏱️ 60-120 min</p>
-                        <p class="game-description">
-                            Construa assentamentos, estradas e cidades enquanto negocia recursos 
-                            com outros jogadores nesta ilha cheia de possibilidades.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="game-card">
-                    <img src="imagens/ticket.jpg" alt="Ticket to Ride" style="width: 200px">
-                    <div class="game-info">
-                        <h3>Ticket to Ride</h3>
-                        <p class="game-players">👥 2-5 jogadores</p>
-                        <p class="game-time">⏱️ 30-60 min</p>
-                        <p class="game-description">
-                            Conecte cidades através de rotas ferroviárias em uma aventura 
-                            estratégica pelo mapa. Simples de aprender, difícil de dominar!
-                        </p>
-                    </div>
-                </div>
-
-                <div class="game-card">
-                    <img src="imagens/pandemic.jpg" alt="Pandemic" style="width: 200px">
-                    <div class="game-info">
-                        <h3>Pandemic</h3>
-                        <p class="game-players">👥 2-4 jogadores</p>
-                        <p class="game-time">⏱️ 45 min</p>
-                        <p class="game-description">
-                            Trabalhe em equipe para salvar a humanidade de quatro doenças mortais. 
-                            Um jogo cooperativo intenso e desafiador.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="game-card">
-                    <img src="imagens/azul.jpg" alt="Azul" style="width: 200px">
-                    <div class="game-info">
-                        <h3>Azul</h3>
-                        <p class="game-players">👥 2-4 jogadores</p>
-                        <p class="game-time">⏱️ 30-45 min</p>
-                        <p class="game-description">
-                            Decore as paredes do palácio real com belos azulejos portugueses 
-                            neste jogo abstrato e visualmente deslumbrante.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="game-card">
-                    <img src="imagens/wingspan.jpg" alt="Wingspan" style="width: 200px">
-                    <div class="game-info">
-                        <h3>Wingspan</h3>
-                        <p class="game-players">👥 1-5 jogadores</p>
-                        <p class="game-time">⏱️ 40-70 min</p>
-                        <p class="game-description">
-                            Atraia as melhores aves para seu santuário neste jogo de construção 
-                            de motor com arte belíssima e tema educativo.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="game-card">
-                    <img src="imagens/7wonders.jpg" alt="7 Wonders" style="width: 200px">
-                    <div class="game-info">
-                        <h3>7 Wonders</h3>
-                        <p class="game-players">👥 2-7 jogadores</p>
-                        <p class="game-time">⏱️ 30 min</p>
-                        <p class="game-description">
-                            Construa uma das sete maravilhas do mundo antigo através de três eras 
-                            de desenvolvimento em um jogo rápido de draft de cartas.
-                        </p>
-                    </div>
-                </div>
+    <main>
+      <section id="container-jogos">
+        <div class="info-jogos">
+          <p>Seleção Especial</p>
+          <h1>Jogos Populares</h1>
+          <h2>
+            Conheça alguns dos boardgames mais jogados e amados pela comunidade
+            mundial. Cada jogo oferece uma experiência única e memorável.
+          </h2>
+        </div>
+        <div class="jogos">
+          <div class="jogo-card">
+            <img src="../../imagens/games/Catan.webp" alt="Catan" />
+            <div class="title-game">
+              <h3>Catan</h3>
+              <i class="fa-solid fa-star"> 8.6</i>
             </div>
-        </section>
+            <div class="info">
+              <i class="fa-regular fa-user" class="user"> 3-5 jogadores</i>
+              <i class="fa-regular fa-clock" class="time"> 60-120 min</i>
+            </div>
+            <p>
+              Construa assentamentos, estradas e cidades enquanto negocia
+              recursos com outros jogadores nesta ilha cheia de possibilidades.
+            </p>
+          </div>
+          <div class="jogo-card">
+            <img src="../../imagens/games/Ticket.png" alt="Ticket" />
+            <div class="title-game">
+              <h3>Ticket to Ride</h3>
+              <i class="fa-solid fa-star"> 8.2</i>
+            </div>
+            <div class="info">
+              <i class="fa-regular fa-user" class="user"> 2-5 jogadores</i>
+              <i class="fa-regular fa-clock" class="time"> 30-60 min</i>
+            </div>
+            <p>
+              Conecte cidades através de rotas ferroviárias em uma aventura
+              estratégica pelo mapa. Simples de aprender, difícil de dominar!
+            </p>
+          </div>
+          <div class="jogo-card">
+            <img src="../../imagens/games/Pandemic.jpg" alt="Pandemic" />
+            <div class="title-game">
+              <h3>Pandemic</h3>
+              <i class="fa-solid fa-star"> 8.4</i>
+            </div>
+            <div class="info">
+              <i class="fa-regular fa-user" class="user">
+                <span>2-4 jogadores</span></i
+              >
+              <i class="fa-regular fa-clock" class="time"> 45 min</i>
+            </div>
+            <p>
+              Trabalhe em equipe para salvar a humanidade de quatro doenças
+              mortais. Um jogo cooperativo intenso e desafiador.
+            </p>
+          </div>
+          <div class="jogo-card">
+            <img src="../../imagens/games/Azuljpg.jpg" alt="Azul" />
+            <div class="title-game">
+              <h3>Azul</h3>
+              <i class="fa-solid fa-star"> 8.1</i>
+            </div>
+            <div class="info">
+              <i class="fa-regular fa-user" class="user"> 2-4 jogadores</i>
+              <i class="fa-regular fa-clock" class="time"> 30-45 min</i>
+            </div>
+            <p>
+              Crie belos mosaicos portugueses neste jogo abstrato de colocação
+              de peças. Elegante, estratégico e visualmente deslumbrante.
+            </p>
+          </div>
+          <div class="jogo-card">
+            <img src="../../imagens/games/Git.jpg" alt="Got" />
+            <div class="title-game">
+              <h3>Game of Thrones</h3>
+              <i class="fa-solid fa-star"> 8.7</i>
+            </div>
+            <div class="info">
+              <i class="fa-regular fa-user" class="user"> 3-6 jogadores</i>
+              <i class="fa-regular fa-clock" class="time"> 120-300 min</i>
+            </div>
+            <p>
+              Os jogadores assumem o papel de Grandes Casas de Westeros lutando
+              pelo controle do Trono de Ferro através de manobras diplomáticas,
+              militares e estratégica alocação de ordens.
+            </p>
+          </div>
+          <div class="jogo-card">
+            <img src="../../imagens/games/Vida.jpg" alt="Life" />
+            <div class="title-game">
+              <h3>Jogo da Vida</h3>
+              <i class="fa-solid fa-star"> 8.8</i>
+            </div>
+            <div class="info">
+              <i class="fa-regular fa-user" class="user"> 3-6 jogadores</i>
+              <i class="fa-regular fa-clock" class="time"> 45-60 min</i>
+            </div>
+            <p>
+              Um jogo familiar no qual os jogadores “vivem” a vida através de
+              escolhas como faculdade ou carreira, casamento, filhos,
+              investimentos etc., e o vencedor é quem acumula mais riqueza ao
+              final da “jornada”.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
 
-  <footer>
-    <p>&copy; 2025 Mundo BoardGames</p>
-  </footer>
-</body>
+    <footer>
+      <div>
+        <div class="info-logo">
+          <img
+            src="../../imagens/LogoImg.png"
+            alt="Logo Mundo BoardGames"
+            class="logo"
+          />
+          <h2>
+            <span>MUNDO</span><br />
+            BOARDGAMES
+          </h2>
+        </div>
+        <p>Seu portal dedicao ao universo dos jogos de tabuleiro</p>
+      </div>
+
+      <div>
+        <h2>Links Rápidos</h2>
+        <ul>
+          <li><a href="./index.html">Início</a></li>
+          <li><a href="../jogos/index.html">Jogos</a></li>
+          <li><a href="../ranking/index.html">Ranking</a></li>
+          <li><a href="../contato/index.html">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Recursos</h2>
+        <ul>
+          <li><a href="./index.html">Guia para Iniciantes</a></li>
+          <li><a href="./index.html">Regras dos Jogos</a></li>
+          <li><a href="./index.html">Comunidade</a></li>
+          <li><a href="./index.html">Blog</a></li>
+        </ul>
+      </div>
+
+      <div></div>
+      <p>
+        © 2025 Mundo BoardGames. Todos os direitos reservados. Diversão
+        garantida em cada jogada!
+      </p>
+    </footer>
+  </body>
 </html>
